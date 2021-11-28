@@ -37,9 +37,6 @@ data class Bill(
     val color: Color
 )
 
-/**
- * Pretend repository for user's data.
- */
 object UserData {
     val accounts: List<Account> = listOf(
         Account(
@@ -96,6 +93,12 @@ object UserData {
             "ABC Loans 2",
             "Feb 29",
             77.4f,
+            Color(0xFFFFAC12)
+        ),
+        Bill(
+            name = "GD Loans",
+            due = "Tomorrow",
+            amount = 33.4f,
             Color(0xFFFFAC12)
         )
     )
